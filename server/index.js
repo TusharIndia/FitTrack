@@ -5,6 +5,7 @@ require('dotenv').config();
 
 connectToMongo();
 const app = express();
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(cors(
@@ -18,6 +19,6 @@ app.use(cors(
 app.use('/api/user',require('./routes/user'));
 app.use('/api/workout',require('./routes/workout'));
 
-app.listen(5000,()=>{
+app.listen(PORT,()=>{
     console.log('Listening at the port 5000')
 })
