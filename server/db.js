@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongouri = 'mongodb://localhost:27017/Workoutt'
+const mongouri = process.env.MONGO_URI
 
 const connectToMongo = async () => {
     await mongoose.connect(mongouri)
