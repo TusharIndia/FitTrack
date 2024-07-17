@@ -185,7 +185,7 @@ const About = () => {
               </div>
               <Link
                 className="inline-flex h-10 hover:bg-green-500 hover:text-white items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                to="/sign-up"
+                to="/signup"
                 rel="ugc"
               >
                 Sign Up Now
