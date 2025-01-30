@@ -121,6 +121,15 @@ router.get("/piechart", fetchuser, async (req, res) => {
 });
 
 
+router.get("/hello", fetchuser, async (req, res) => {
+  try {
+    res.send("Hello");
+  } catch (error) {
+    res.status(500).send(error); 
+  }
+});
+
+
 router.get("/barchart", fetchuser, async (req, res) => {
   try {
     const today = moment().startOf("day");
